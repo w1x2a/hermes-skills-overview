@@ -8,7 +8,49 @@
 
 Hermes Skill 是一组可复用的任务能力包，通常包含：触发场景、标准操作流程、推荐命令、验证方法、常见坑位和相关参考文件。它的作用是让 Agent 在处理具体任务时不用从零摸索，而是调用已经沉淀好的工作流。
 
-本仓库是当前环境中 `~/.hermes/skills` 的备份与索引。压缩包在 Release 中，本文档提供中文概览，方便快速判断有哪些能力。
+本仓库是当前环境中 `~/.hermes/skills` 的**公开中文索引**。你可以把它当成“目录 + 说明书”，先看懂有哪些能力，再决定要不要安装到自己的 Hermes。
+
+完整压缩包仍保留在私有仓库中。
+
+## 文档入口
+
+- [如何添加 Hermes Skill](./ADD_SKILL_GUIDE.md)
+
+## 如何使用这份索引
+
+1. 先在下面的分类中找到你关心的 Skill。
+2. 如果想把它加到自己的 Hermes 里：
+   - 运行 `hermes skills install <技能名或 URL>`
+   - 或在会话中输入 `/skill <技能名>`
+3. 安装后用 `hermes skills list` 检查是否成功。
+4. 不确定是否要装时，先用 `hermes skills inspect <技能名>` 预览。
+
+## 如何给自己的 Hermes 添加 Skill
+
+### 安装已有 Skill
+
+```bash
+hermes skills install <skill-name>
+hermes skills install https://example.com/SKILL.md
+hermes skills list
+```
+
+### 自己编写 Skill
+
+一个 Skill 通常包含：
+
+- `SKILL.md`
+- 触发场景
+- 功能说明
+- 推荐命令或操作流程
+- 常见坑和验证方法
+
+### 给本仓库补充说明
+
+- 只补充中文索引和说明
+- 不要加入完整备份包
+- 不要加入 `.env`、token、key 或私有路径
+- 有新 Skill 时可更新对应分类条目
 
 ## 快速总览
 
