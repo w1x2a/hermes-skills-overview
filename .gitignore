@@ -1,0 +1,13 @@
+# Never publish raw backups or local secrets
+*.tar.gz
+*.zip
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+references/
+scripts/
+assets/
+backups/
