@@ -521,7 +521,7 @@ hermes skills list
 
 这是一个**脱敏公开索引**，只展示 Hermes Skills 的分类和功能概览。
 
-本公开仓库**不包含**：
+本公开仓库不包含：
 
 - 完整 `~/.hermes/skills` 压缩包
 - 任何 Release 备份附件
